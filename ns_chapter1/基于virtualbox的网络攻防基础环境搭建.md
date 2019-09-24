@@ -27,6 +27,8 @@
 
 ## 二、搭建满足要求的虚拟机网络拓扑
 
+  ![](https://c4pr1c3.github.io/cuc-ns/chap0x01/attach/chap0x01/media/vb-exp-layout.png)
+
 ### 实验说明：
 
 + 实验环境：本次实验需要用到六台虚拟机系统，分别为两台xp系统，两台Debian系统以及两台kali系统，一台kali作为攻击者，一台debian作为网关，剩下四台分在两个局域网内，均作为靶机。
