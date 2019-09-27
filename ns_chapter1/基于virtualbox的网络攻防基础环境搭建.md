@@ -191,7 +191,7 @@
 
         + **关闭网关后不再能访问网络，由图可知两台机器的ip地址是169开头的，是自动获取的，网关也不存在，更加力证了要求。**
   
-          ![](image\victim-cannot-ping.png)
+          <img src="image\victim-cannot-ping.png" />
   
           
      
