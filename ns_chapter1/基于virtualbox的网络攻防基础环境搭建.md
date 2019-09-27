@@ -125,15 +125,9 @@
 
   1. 对靶机的ip地址进行ping以后发现均无法连通
 
-     <img src="image\10.png"/>
+  <img src="image\10.png"/>
 
-     
-
-  
-
-  
-
-​           2. 为证明并不是由于kali-Attacker上不了网而无法ping，进行了ping baidu，连通性正常
+  2. 为证明并不是由于kali-Attacker上不了网而无法ping，进行了ping baidu，连通性正常
 
 ​     <img src="image\11.png" style="zoom:80%;" />
 
