@@ -26,7 +26,7 @@
   
   + tinyproxy 
   
-    [tinyproxy简介]: http://tinyproxy.github.io/
+    [tinyproxy简介](http://tinyproxy.github.io/) 
   
   + apache ：web服务器
   
@@ -64,7 +64,7 @@
 
   <img src="image\靶机开启apache.png" />
 
-  > [参考命令行]: https://www.cnblogs.com/kenshinobiy/p/9212344.html
+  [参考命令行](https://www.cnblogs.com/kenshinobiy/p/9212344.html)
 
 + 开启apache以后靶机可以通过浏览器访问攻击者
 
@@ -145,11 +145,11 @@
 
 ## 实验参考
 
-+ [师姐的作业]: https://github.com/CUCCS/2018-NS-Public-jckling/blob/ns-0x03/ns-0x03/3.md
++ [师姐的作业](https://github.com/CUCCS/2018-NS-Public-jckling/blob/ns-0x03/ns-0x03/3.md)
 
-+ [linux文本编辑]: https://www.cnblogs.com/gaosf/p/10154786.html
-
-+ [网络安全课本]: https://c4pr1c3.github.io/cuc-ns/chap0x03/exp.html
++ [linux文本编辑](https://www.cnblogs.com/gaosf/p/10154786.html
+) 
++ [网络安全课本](https://c4pr1c3.github.io/cuc-ns/chap0x03/exp.html)
 
   
 
