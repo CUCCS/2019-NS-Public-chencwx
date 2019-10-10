@@ -211,7 +211,7 @@
 
    <img src="image\找驱动.png"  />
 
-+ 安装驱动，由于openwrt网站的问题，经常会安装失败，于是换了一个源，换了一个源又有了新错误，于是换回来了。安装驱动时，还出现了cannot install the packet的错误，于是加了一个参数: **--nodeps**（强制安装）,后成功安装
++ 安装驱动，由于openwrt网站的问题，经常会安装失败，于是换了一个源，换了一个源又有了新错误，于是换回来了。安装驱动时，还出现了cannot install the packet的错误，于是加了一个参数: **--nodeps**（强制安装）,后成功安装，发现强制安装以后无法使用，原因是内核太低，于是最后决定**重装openwrt**。
 
   <img src="image\成功安装.png"  />
 
@@ -221,9 +221,47 @@
 
    <img src="image\wireless.png"  />
 
-  + **无线网络在luci界面上显示未成功**（更换网卡试了以后都不行）
+  + 安装成功驱动界面
 
-   
+    <img src="image\成功安装驱动.png"  />
+
++ 成功加载网卡以后界面上出现了wireless！！！
+
+  <img src="image\出现wireless.png"  />
+
++ 不要使用 Auto 模式的信道选择和信号强度，[均手工指定](https://forum.archive.openwrt.org/viewtopic.php?id=37896) 才可以。
+
+  <img src="image\手工修改channel.png"  />
+
++ 在经历了重重困难以后（换了n个网卡，装了n次机以后），终于成功了！！下图是无设备连接的情况
+
+  <img src="image\无设备.png"  />
+
++ 接下来是我的手机连上的情况（一台设备）
+
+  <img src="image\有设备.png"  />
+
++ 通过该网卡扫描周围的wifi情况
+
+  <img src="image\扫描设备.png"  />
+
+  
+
+---
+
+
+
+## 实验遇到问题
+
++ openwrt装上后ping的通ip，ping不通域名，修改了域名服务器的配置文件后解决
++ 网卡没有AP，换网卡解决问题
++ openwrt大小不够，vdi 扩容后重装系统后成功
++ 驱动找不到适合网卡的，在黄大的帮助下换了网卡解决了
++ 驱动装不上，opkg update成功后驱动成功安上
++ usb供电不足，换usb口
++ 总结经验：**重启重装重买**！
+
+
 
   
 
