@@ -14,7 +14,8 @@
   - ps aux | grep apache2 查看apache是否安装
   - curl +victim ip地址
   - apt update &&apt-get install tinyproxy/apache2/
-  - tail -F /var/log/apache2/access.log 刷新日志- -s 可以设置包的最大长度
+  - tail -F /var/log/apache2/access.log 刷新日志
+  - -s 可以设置包的最大长度
   - 增加host-only的网卡方便ssh远程操作
   - ps aux | grep apache2 查看apache是否安装
   - curl +victim ip地址
@@ -56,15 +57,15 @@
 
 ### 实验过程
 
-+ 在未开启apache前，靶机无法通过浏览器访问攻击者，此时由于web服务器还未开启
++ 在未开启apache前， 靶机对攻击者的HTTP请求没有响应 ，此时由于web服务器还未开启
 
   <img src="image\靶机无法访问攻击者（浏览器）.png" />
 
-+ 开启apache服务，命令行是:service apache2 start 
++ 开启apache服务，命令是:service apache2 start（**不推荐，建议使用systemctl start apache2**)
 
   <img src="image\靶机开启apache.png" />
 
-  [参考命令行](https://www.cnblogs.com/kenshinobiy/p/9212344.html)
+  [参考命令](https://www.cnblogs.com/kenshinobiy/p/9212344.html)
 
 + 开启apache以后靶机可以通过浏览器访问攻击者
 
@@ -76,7 +77,7 @@
 
 + 至此，攻击者还是无法访问靶机，接下来使用正向代理，tinyproxy
 
-  + 网关安装tinyproxy,命令行为
+  + 网关安装tinyproxy,命令为
 
     ```
     - apt update && apt-get install tinyproxy //安装tinyproxy
@@ -104,7 +105,7 @@
     + 配置完成后，攻击者在浏览器对靶机进行访问，同时在靶机上抓包
 
       ```
-      命令行:tcpdump -i eth0 -n -s 65535 -w attacker.pcap //抓包长度限制为65535，并把结果保存下来
+      命令:tcpdump -i eth0 -n -s 65535 -w attacker.pcap //抓包长度限制为65535，并把结果保存下来
       ```
 
       <img src="image\靶机抓包.png" />
@@ -121,7 +122,7 @@
 
         <img src="image\抓包概况.png" />
 
-      + 选取其中404的包追踪http流，发现我们能看到代理，但是看不到具体的信息（ip地址等等信息），这个信息可以看到更底层（数据链路层）的数据包
+      + 选取其中404的包追踪http流，发现我们能看到代理，但是看不到具体的信息（ip地址等等信息）
 
         <img src="image\代理信息.png" />
 
@@ -135,7 +136,7 @@
 
 ## 实验总结
 
-+ 本次实验拓扑：
++ 本次实验连通性示意图：
 
   <img src="image\拓扑图.png" />
 
