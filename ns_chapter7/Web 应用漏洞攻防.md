@@ -89,12 +89,9 @@
 
 #### 未验证的用户输入
 
-+ 先登录到webgoat7.1/8.0版本界面，进行绕过前端检查实验，其实也是在感受前端检查的虚无，原理：未进行验证的用户通过修改前端代码实现前端验证的绕过
++ 先登录到webgoat7.1/8.0版本界面，进行绕过前端检查实验，其实也是在感受前端检查的虚无，原理：未进行验证的用户通过修改前端代码实现前端验证的绕过`Parameter Tampering ( 1. 未验证的用户输⼊ )-->Bypass HTML Field Restrictions`
 
-  ```bash
-Parameter Tampering ( 1. 未验证的用户输⼊ )-->Bypass HTML Field Restrictions
-  ```
-  
+
 + 先查看该实验要求，即绕过前端的检查，使得可以输入‘不合法’的字段
 
   ![](./image/绕过前端要求.png)
@@ -459,7 +456,6 @@ Parameter Tampering ( 1. 未验证的用户输⼊ )-->Bypass HTML Field Restrict
     举和后台程序扫描
 + 本次实验通过php实现了对任意文件的访问（file:///etc/passwd）
 + kali系统有自带的php
-
 ![](./image/php.png)
 
 + 编辑一段代码验证php正常使用
