@@ -110,7 +110,7 @@
 
 + 在使用fail2ban之前进行ssh连接，发现失败了
 
-  ![](D:\大三上\网络安全\实验\ns_chapter10\image\Ssh.png)
+  ![](./image/Ssh.png)
 
 + 配置ssh配置文件，允许root权限ssh
   
