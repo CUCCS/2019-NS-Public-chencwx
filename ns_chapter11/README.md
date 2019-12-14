@@ -345,7 +345,7 @@
 
   ![](./image/安装并启动.png)
 
-+ 前端和总机现在将在前台运行。可以从http://example1.com/generate访问前端。如果您希望在后台运行此程序，则可以使用
++ 前端和总机现在将在前台运行。可以从`http://example1.com/generate`访问前端，如果你希望在后台运行此程序，则可以使用以下指令
 
   ```bash
   $ docker-compose up -d
