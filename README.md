@@ -28,7 +28,7 @@
 
 ## ns_chap0x07:Web 应用漏洞攻防
 
-+ [实验报告](https://github.com/CUCCS/2019-NS-Public-chencwx/blob/ns_chap0x07/ns_chapter7/Web 应用漏洞攻防.md)
++ [实验报告](https://github.com/CUCCS/2019-NS-Public-chencwx/blob/ns_chap0x07/ns_chapter7)
 
 ## ns_chap0x08:防火墙配置与使用
 
