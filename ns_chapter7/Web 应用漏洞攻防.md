@@ -40,7 +40,7 @@
 
   ![](./image/compose.png)
 
-+ 查看镜像
++ 查找软件包「docker」的版本信息
 
    ```bash
     apt policy docker.io 
